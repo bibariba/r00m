@@ -1,0 +1,203 @@
+body {
+    background-color: lightblue;
+}
+
+  html, body {
+      width:100%;
+      height:100%;
+      color: black;
+      font-family: "Arial", Helvetica, Sans-Serif;
+      font-size: 16px;
+  	font-style: normal;
+  	text-align: center;
+  	letter-spacing: 0.035em;
+  }
+
+
+  .furniture {
+  position: absolute;	
+  display: none;
+  cursor:move;
+  }
+  
+  .broken {
+      display: none;
+  }
+  
+      #cactus {
+          z-index:20;
+          margin-left:50%;
+          margin-top:10%;
+      }
+      
+      #chair {
+          z-index:3;
+           margin-left:30%;
+          margin-top:20%;
+      }
+         
+       #coffee {
+          z-index:20;
+          margin-left:80%;
+          margin-top:5%;
+      }
+      
+       #lamp {
+          z-index:7;
+          margin-left:17%;
+          margin-top:11%;
+      }
+      
+       #rug {
+          z-index:1;
+           margin-left:47%;
+          margin-top:30%;
+      }
+      
+       #table {
+          z-index:2;
+      }
+      
+       #window {
+          z-index:0;
+          margin-left:82%;
+          margin-top:20%;
+      }
+      
+      #banana {
+          z-index:12;
+          margin-left:60%;
+          margin-top:30%;
+      }
+      
+      #ghost {
+          z-index:0;
+          margin-left:20%;
+          margin-top:26%;
+      }
+      
+      #gloves {
+          z-index:30;
+          margin-left:10%;
+          margin-top:15%;
+      }
+      
+      #guitar {
+          z-index:20;
+          margin-left:64%;
+          margin-top:10%;
+      }
+      
+      #mouse {
+          z-index:1;
+          margin-left:33%;
+          margin-top:8%;
+      }
+      
+      #officechair {
+          z-index:1;
+          margin-left:66%;
+          margin-top:1%;
+      }
+      
+      
+      #pablo {
+          z-index:200;
+          margin-left:1%;
+          margin-top:31%;
+      }
+      
+      #padthai {
+          z-index:20;
+          margin-left:39%;
+          margin-top:12%;
+      }
+      
+      #panties {
+          z-index:20;
+          margin-left:51%;
+          margin-top:11%;
+      }
+      
+      #panties2 {
+          z-index:20;
+          margin-left:11%;
+          margin-top:1%;
+      }
+      
+      #redcup {
+          z-index:20;
+          margin-left:2%;
+          margin-top:22%;
+      }
+      
+      #slippers {
+          z-index:4;
+          margin-left:23%;
+          margin-top:1%;
+      }
+      
+      #socks {
+          z-index:20;
+          margin-left:89%;
+          margin-top:0%;
+      }
+      
+      #teapot {
+          z-index:20;
+          margin-left:71%;
+          margin-top:16%;
+      }
+      
+      #water {
+          z-index:20;
+          margin-left:42%;
+          margin-top:3%;
+      }
+      
+        #book {
+          z-index:20;
+          margin-left:62%;
+          margin-top:12%;
+      }
+      
+        #cupboard {
+          z-index:1;
+          margin-left:72%;
+          margin-top:7%;
+      }
+      
+        #closet {
+          z-index:0;
+          margin-left:12%;
+          margin-top:19%;
+      }
+
+  .about {
+      position:absolute;
+      left:15px;
+      top:20px;
+      z-index:1000;
+      -ms-transform: rotate(-35deg); /* IE 9 */
+      -webkit-transform: rotate(-35deg); /* Chrome, Safari, Opera */
+      transform: rotate(-35deg);
+ }
+
+.menu {
+    position:absolute; 
+    bottom:5%; 
+    width:100%;
+    z-index:1000;
+    word-spacing:4em;
+    text-align:center;
+    
+}
+
+.menu_item {
+    width:100px;
+    z-index:1000;
+    word-spacing:4em;
+    cursor:pointer;
+    float:left;
+    margin-top:15px;
+}

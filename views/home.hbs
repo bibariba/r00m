@@ -1,28 +1,165 @@
-<p>
-    The temperature near Green Hall is {{temperature}} and the wind direction is from {{wind_direction}}°.
-</p>
+<!DOCTYPE html>
+<html lang="en-us">
 
-<p>
-    The next bus at York and Chapel is arriving {{arriving_in}} on route {{route}}.
-
-<div style="font-size:{{font_size}}pt; margin-left:{{margin}}pt;">
-
-    {{#each phrases}}
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css">
+     <title>R OO M</title> 
+ </head>
+ 
+ 
+    <body> 
+    &darr; <u>choose the furniture bellow</u> &darr;
     
-        <div>
-            <span style="display: inline-block; transform: rotate({{../wind_direction}}deg);">
-                <a href="/show?id={{id}}">Someone</a> is {{preposition}} {{noun}}
-            </span>
-        </div>
+    <div class="furniture" id="banana">
+            <img class="good" src="images/banana.png">
+            <img class="broken" src="images/bananaBR.png">
+    </div>
     
-    {{/each}}
+    <div class="furniture" id="book">
+            <img src="images/book.png">
+    </div>
     
-</div>
+    <div class="furniture" id="cactus">
+            <img src="images/cactus.png">
+    </div>
+    
+    <div class="furniture" id="chair">
+            <img src="images/chair.png">
+    </div>
+    
+    <div class="furniture" id="coffee">
+            <img class="good" src="images/coffee.png">
+            <img class="broken" src="images/coffeeBR.png">
+    </div>
+    
+           <div class="furniture" id="cupboard">
+           <img src="images/cupboard.png">
+    </div>
 
-<p>
-    <a href="/new">Add a phrase</a>
-</p>
-<p>
-    <a href="/about">About this site</a>
-</p>
+    <div class="furniture" id="closet">
+            <img class="good" src="images/closet.png">
+            <img class="broken" src="images/closetBR.png">
+    </div>
+    
+    <div class="furniture" id="gloves">
+            <img class="good" src="images/gloves.png">
+            <img class="broken" src="images/glovesBR.png">
+    </div>  
+    
+     <div class="furniture" id="ghost">
+            <img src="images/ghost.png">
+    </div>  
+    
+    <div class="furniture" id="guitar">
+            <img class="good" src="images/guitar.png">
+            <img class="broken" src="images/guitarBR.png">
+    </div>  
+    
+    <div class="furniture" id="lamp">
+            <img class="good" src="images/lamp.png">
+            <img class="broken" src="images/lampBR.png">
+    </div>
+    
+    <div class="furniture" id="mouse">
+        <img class="good" src="images/mouse.png">
+        <img class="broken" src="images/mouseBR.png">
+    </div>  
+    
+    <div class="furniture" id="rug">
+            <img class="good" src="images/rug.png">
+        <img class="broken" src="images/rugBR.png">
+    </div>
+    <div class="furniture" id="table">
+        <img class="good" src="images/table.png">
+        <img class="broken" src="images/tableBR.png">
+    </div>
+   
+    <!--<div class="furniture" id="officechair">-->
+    <!--        <img src="images/officechair.png">-->
+    <!--</div>  -->
+    
+    <div class="furniture" id="pablo">
+            <img src="images/pablo.png">
+    </div>  
+    <div class="furniture" id="padthai">
+        <img class="good" src="images/padthai.png">
+        <img class="broken" src="images/padthaiBR.png">
+    </div>  
+   
+    <div class="furniture" id="panties">
+            <img src="images/panties.png">
+    </div> 
+   
+    <div class="furniture" id="panties2">
+            <img src="images/panties2.png">
+    </div>  
+    
+    <div class="furniture" id="redcup">
+            <img src="images/redcup.png">
+    </div>  
+    
+    <div class="furniture" id="slippers">
+        <img class="good" src="images/slippers.png">
+        <img class="broken" src="images/slippersBR.png">
+    </div>  
+    
+    <div class="furniture" id="socks">
+        <img class="good" src="images/socks.png">
+        <img class="broken" src="images/socksBR.png">
+    </div>  
+    
+    <div class="furniture" id="teapot">
+        <img class="good" src="images/teapot.png">
+        <img class="broken" src="images/teapotBR.png">
+    </div>  
+    
+    <div class="furniture" id="water">
+        <img class="good" src="images/water.png">
+        <img class="broken" src="images/waterBR.png">
+    </div>
+    
+   <div class="furniture" id="window">
+        <img class="good" src="images/window.png">
+        <img class="broken" src="images/windowBR.png">    
+    </div>
+  
+    
+    <div class="menu">
+        <div class="menu_item" data-kind="banana">banana</div> 
+        <div class="menu_item" data-kind="book">book</div> 
+        <div class="menu_item" data-kind="cactus">cactus</div> 
+        <div class="menu_item" data-kind="chair">chair</div> 
+        <div class="menu_item" data-kind="coffee">coffee </div> 
+        <div class="menu_item" data-kind="redcup">cup</div>
+        <div class="menu_item" data-kind="cupboard">cupboard</div> 
+        <div class="menu_item" data-kind="closet">closet</div> 
+        <div class="menu_item" data-kind="ghost">ghost</div> 
+        <div class="menu_item" data-kind="gloves">gloves</div> 
+        <div class="menu_item" data-kind="guitar">guitar</div> 
+        <div class="menu_item" data-kind="lamp">lamp</div> 
+        <div class="menu_item" data-kind="mouse">mouse</div> 
+        <div class="menu_item" data-kind="pablo"> Pablo</div> 
+        <div class="menu_item" data-kind="padthai">PadThai</div> 
+        <div class="menu_item" data-kind="panties">panties</div> 
+        <div class="menu_item" data-kind="rug">rug</div> 
+        <div class="menu_item" data-kind="slippers">slippers</div> 
+        <div class="menu_item" data-kind="socks">sock</div> 
+        <div class="menu_item" data-kind="table">table </div> 
+        <div class="menu_item" data-kind="teapot">tea</div>
+        <div class="menu_item" data-kind="panties2">undies</div> 
+        <div class="menu_item" data-kind="water">water</div> 
+        <div class="menu_item" data-kind="window">window</div> 
+        <!--<div class="menu_item" data-kind="officechair">chair</div> -->
+       
+    </div> 
+  
+  <a href="/about" style="color: #fb3f00; text-decoration: none;" class="about">About</a>
+  
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+   <script src="/javascripts/javascript.js"></script>
+    
+   </body>
+</html>
 
