@@ -9,7 +9,6 @@
  
  
     <body> 
-    &darr; <u>choose the furniture bellow</u> &darr;
     
     <div class="furniture" id="banana">
             <img class="good" src="images/banana.png">
@@ -125,41 +124,51 @@
     </div>
   
     
-    <div class="menu">
-        <div class="menu_item" data-kind="banana">banana</div> 
-        <div class="menu_item" data-kind="book">book</div> 
-        <div class="menu_item" data-kind="cactus">cactus</div> 
-        <div class="menu_item" data-kind="chair">chair</div> 
-        <div class="menu_item" data-kind="coffee">coffee </div> 
-        <div class="menu_item" data-kind="redcup">cup</div>
-        <div class="menu_item" data-kind="cupboard">cupboard</div> 
-        <div class="menu_item" data-kind="closet">closet</div> 
-        <div class="menu_item" data-kind="ghost">ghost</div> 
-        <div class="menu_item" data-kind="gloves">gloves</div> 
-        <div class="menu_item" data-kind="guitar">guitar</div> 
-        <div class="menu_item" data-kind="lamp">lamp</div> 
-        <div class="menu_item" data-kind="mouse">mouse</div> 
-        <div class="menu_item" data-kind="pablo"> Pablo</div> 
-        <div class="menu_item" data-kind="padthai">PadThai</div> 
-        <div class="menu_item" data-kind="panties">panties</div> 
-        <div class="menu_item" data-kind="rug">rug</div> 
-        <div class="menu_item" data-kind="slippers">slippers</div> 
-        <div class="menu_item" data-kind="socks">sock</div> 
-        <div class="menu_item" data-kind="table">table </div> 
-        <div class="menu_item" data-kind="teapot">tea</div>
-        <div class="menu_item" data-kind="panties2">undies</div> 
-        <div class="menu_item" data-kind="water">water</div> 
-        <div class="menu_item" data-kind="window">window</div> 
-        <!--<div class="menu_item" data-kind="officechair">chair</div> -->
+    <div class="menu_top">
+        <div class="menu_item" data-kind="banana"><a>banana</a></div> 
+        <div class="menu_item" data-kind="book"><a>book</a></div> 
+        <div class="menu_item" data-kind="cactus"><a>cactus</a></div> 
+        <div class="menu_item" data-kind="chair"><a>chair</a></div> 
+        <div class="menu_item" data-kind="coffee"><a>coffee</a></div> 
+        <div class="menu_item" data-kind="redcup"><a>cup</a></div>
+        <div class="menu_item" data-kind="cupboard"><a>cupboard</div> 
+        <div class="menu_item" data-kind="closet"><a>closet</a></div> 
+        <div class="menu_item" data-kind="ghost"><a>ghost</a></div> 
+        <div class="menu_item" data-kind="gloves"><a>gloves</a></div> 
+        <div class="menu_item" data-kind="guitar"><a>guitar</a></div> 
+        <div class="menu_item" data-kind="lamp"><a>lamp</a></div> 
+     </div>
+        
+    <div class="menu_bottom">
+        <div class="menu_item" data-kind="mouse"><a>mouse</a></div> 
+        <div class="menu_item" data-kind="pablo"><a>Pablo</a></div> 
+        <div class="menu_item" data-kind="padthai"><a>PadThai</a></div> 
+        <div class="menu_item" data-kind="panties"><a>panties</a></div> 
+        <div class="menu_item" data-kind="rug"><a>rug</a></div> 
+        <div class="menu_item" data-kind="slippers"><a>slippers</a></div> 
+        <div class="menu_item" data-kind="socks"><a>sock</a></div> 
+        <div class="menu_item" data-kind="table"><a>table </a></div> 
+        <div class="menu_item" data-kind="teapot"><a>tea</a></div>
+        <div class="menu_item" data-kind="panties2"><a>undies</a></div> 
+        <div class="menu_item" data-kind="water"><a>water</a></div> 
+        <div class="menu_item" data-kind="window"><a>window</a></div> 
+        <!--<div class="menu_item" data-kind="officechair"><a>chair</a></div> -->
        
     </div> 
   
-  <a href="/about" style="color: #fb3f00; text-decoration: none;" class="about">About</a>
+   <a href="/about" style="color: #fb3f00; text-decoration: none;" class="about">About</a>
   
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
    <script src="/javascripts/javascript.js"></script>
-    
+    <script>
+        $(document).ready(function(){
+    $('a').click(function(){
+        $(this).toggleClass('clicked');
+    });
+});
+    </script>
    </body>
 </html>
+
 
