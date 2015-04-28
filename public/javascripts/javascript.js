@@ -14,12 +14,14 @@
       
       var furniture = $('#' + kind);
       
-      // If it's already visible, just hide it
-      if (furniture.is(':visible')) {
-          furniture.hide();
+       // If it's already visible, just hide it
+      if(furniture.is(':visible') && !furniture.find(".broken").is(":visible")) {
+        furniture.hide();
       }
+        
       
       // Otherwise, tell the server to add it to the database
+      
       else { 
         $.get('/create?kind=' + kind, function(data) {
             
@@ -37,6 +39,7 @@
         }, 'json');
         
       }
+      
       
     });
 
